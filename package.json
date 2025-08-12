@@ -4,5 +4,8 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.7.1",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
   }
 }
