@@ -28,8 +28,15 @@ const router = createBrowserRouter(
 )
 
 function App() {
-  const addJob = (newJob) => {
-    console.log(newJob)
+  const addJob = async (newJob) => {
+    const res = await fetch("/api/jobs", {
+      method: "POST",
+      headers: {
+        "content-Type": "application/json",
+      },
+      body: JSON.stringify(newJob),
+    })
+    return
   }
 
   const router = createBrowserRouter(
